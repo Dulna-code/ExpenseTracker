@@ -20,7 +20,7 @@ public class ExpenseService {
         List<Expense> expenses = new ArrayList<>();
         File file = new File(FILE_NAME);
 
-        if (!file.exists()) return expenses; // Return empty list if no file exists yet
+        if (!file.exists()) return expenses;
 
         try (BufferedReader br = new BufferedReader(new FileReader(file))) {
             String line;

@@ -18,4 +18,20 @@ public class Expense {
     public String toCsvRow() {
         return date + ";" + description + ";" + amount + ";" + category;
     }
+
+    public LocalDate getDate() {
+        return date;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public double getAmount() {
+        return amount;
+    }
+
+    public String getCategory() {
+        return category;
+    }
 }
